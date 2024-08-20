@@ -1,0 +1,114 @@
+html, body {
+    background: linear-gradient( to bottom, darkcyan, black );
+	margin: 0;
+}
+.about {
+	font-family: 'OCR A Std', sans-serif;
+	color: white;
+	width: 210px;
+	margin: 40px 20px 20px;
+}
+.about h1{
+	margin: 0;
+	padding: 5px 0;
+}
+.home-icon {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	font-size: 35px;
+	text-decoration: none;
+}
+.home-icon a{
+	color: white;
+}
+.home-icon a:hover{
+	color: bisque;
+}
+.contact_container{
+	font-family: 'OCR A Std', sans-serif;
+	margin: 75px 20px 50px;
+	border: solid white;
+	border-style: double;
+	border-width: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	min-width: 700px;
+}
+.contact_container img{
+	height: auto;
+	max-height: 80vh;
+	width: 40%;
+}
+.contact {
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+}
+.contact h1{
+	padding-bottom: 50px;
+	border-bottom: solid white;
+	width: 200px;
+	text-transform: uppercase;
+}
+.contact h2{
+	margin-right: 20px;
+	text-transform: uppercase;
+}
+.contact hr{
+	border: 3px solid bisque;
+	border-radius: 5px;
+}
+.shortest{
+	width: 20%;
+}
+.short{
+	width: 40%;
+}
+.long{
+	width: 75%;
+}
+
+.hobbies {
+	align-items: center;
+}
+
+.hobbies p{
+	font-family: 'OCR A Std', sans-serif;
+	color: white;
+	display: block;
+    margin: 0 auto;
+	margin-top: 25px;
+	width: 75%;
+	text-align: center;
+}
+.hobbies video{
+	height: 90vh;
+	display: block;
+    margin: 5vh auto;
+    box-shadow: 0 0 10px 10px bisque;
+}
+.hobbies hr{
+	width: 85%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.hobbies a{
+	color: white;
+}
+.decor{
+	color: bisque;
+	font-size: 1.5em;
+}
+.hvid video{
+	height: auto; 
+    width: 80%;
+    max-width: 100%;
+    display: block;
+    margin: 5vh auto;
+    box-shadow: 0 0 10px 10px bisque;
+}

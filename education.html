@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Education</title>
+    <link rel="stylesheet" href="education.css">
+    <!-- FONTS -->
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/ocr-a-std">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="home-icon">
+        <a href="index.html"><i class="fa fa-home"></i></a>
+    </div>
+    <div class="heading">
+        <h1>Computer Science</h1>
+	    <h3>Northern Arizona University</h3>
+	</div>
+	<div class="pdf">
+        <iframe id="pdf-viewer" class="pdf-viewer" src="SSR_TSRPT.pdf"></iframe>
+        <p id="fallback-link">Safari browser does not support embedded pdfs. <br>Please click <a href="SSR_TSRPT.pdf" target="_blank">here</a> to view my college transcript.</p>
+	</div>
+	
+	<script>
+        function isSafari() {
+            var userAgent = navigator.userAgent.toLowerCase();
+			//return true if safari and not chrome, else return false
+            return (userAgent.indexOf("safari") > -1 && userAgent.indexOf("chrome") === -1);
+        }
+
+        if (isSafari()) {
+            document.getElementById('pdf-viewer').style.display = 'none';
+            document.getElementById('fallback-link').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

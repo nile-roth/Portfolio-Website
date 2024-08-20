@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Projects</title>
+    <link rel="stylesheet" href="projects.css">
+    <!-- FONTS -->
+    <link href="https://fonts.cdnfonts.com/css/ocr-a-std" rel="stylesheet">
+	<!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="home-icon">
+        <a href="index.html"><i class="fa fa-home"></i></a>
+    </div>
+	
+	<div class="proj-title">
+	    <h1>DBSCAN Algorithm</h1>
+		<h3>(Density-Based Spatial Clustering of Applications with Noise)</h3>
+	</div>
+	<div class="proj-description">
+		<div class="double-image">
+            <p>I was proudly the lead developer for this group project. This algorithm is able to cluster (group) data in any dataset based on their dimensional distance from one another. Because of the millions of points that the average datasets contain, we utilized the speed and parallelism of the GPU through Cuda programming. Multiple optimizations were made to maximize our kernel’s runtime performance. <br><br>The neat thing about this algorithm is that it's not only applicable to simple 2-dimensional datasets like the one displayed to the right. It can be used to cluster any CSV dataset, including images and videos (with millions of dimensions)! We tested and applied our DBSCAN implementation to identify star clusters from a dataset of star locations, and areas of intense snow from a dataset containing the snowfall of different regions. Please take the time to view our <a href="DBSCAN_Parallelization_on_the_GPU.pdf" target=”_blank”>final report</a> which outlines everything about this project including our implementation technique.</p>	    
+		    <img src="dbscan_input.png">
+		    <img src="dbscan_output.png">
+		</div>
+	</div>
+	
+	<div class="proj-title">
+	    <h1>Operating System Simulation</h1>
+	</div>
+	<div class="proj-description">
+        <p>This simulator project was written in the C language, and is one of the most intricate and complex solo projects I have completed thus far. This program takes in randomized metadata and simulates how an operating system handles processes, device IO, and memory requests. <br><br>This program can run preemptively meaning processes can be interrupted by higher-priority processes, accurately reflecting how single-core CPUs work. A good example of preemption in my simulator is context-switching: When a process makes (and waits for) a request, the CPU will save the state of that process and begin working on the next scheduled process. This speeds up the execution time, for the CPU is only idle when all processes are blocked. When ran non-preemptively on the other hand, all processes are uninterrupted and execute in their scheduled order. <br><br>My simulator follows an inputted scheduling algorithm. The options are: <br>FCFS-N (first come first served non-preemptive)<br>FCFS-P (first come first served preemptive)<br>SJF-N (shortest job first non-preemptive)<br>SRTF-P (shortest remaining time first preemptive)<br>RR-P (<a href="https://www.scaler.com/topics/round-robin-scheduling-in-os/" target=”_blank”>round robin scheduling<a>) <br><br>Download the code <a href="sim4.zip">here</a> and run in a linux terminal. Feel free to change things around in the configuration and metadata files. </p>	
+		<video autoplay muted loop><source src="simRun.mp4" type="video/mp4"></video>
+	</div>
+
+	<div class="proj-title">
+	    <h1>DendroDoggie Application</h1>
+	</div>
+	<div class="proj-description">
+        <p>This project was for my senior capstone and turned out to be a big success for our clients. We created an Android application that provides a single interface to download, visualize, organize, and store data outputted from devices created by the well-known TOMST company. These devices include the dendrometer which measures tree growth through a compression pin, and the TMS-4 which reads soil moisture. Both of these devices also take temperature measurements to show the relationship between climate and these variables. <br><br>As the Back-end developer for the group, I oversaw the full lifecycle of this application's functionality. My main contributions included translating the raw CSV data into two-dimensional line charts, and the ability to merge CSV data in order to visualize multiple datasets on the same chart plane. <br><br>Our poster for the NAU undergraduate Engineering Fest can be found <a href="Dendro_Dawgz_Poster.pdf" target="_blank">here</a>. <br>Please <a href="dendroDoggie.apk">download</a> the APK for the DendroDoggie application, and test it out! <br><br>Real Data readings to be tested:<br><a href="2024-05-02_92224514_0.csv">Dendrometer_Data.csv</a><br><a href="2024-05-02_95146101_0.csv">TMS4_Data.csv</a>  </p>	
+	    <img src="ddHome.png">
+		<img src="mergedData.png">
+	</div>
+	
+    <div class="proj-title">
+	    <h1>Similarity Search</h1>
+	</div>
+	<div class="proj-description">
+        <p>This was a solo project which was later utilized by my group for the DBSCAN algorithm above. Similarly, this program was written in Cuda so that we can utilize the speed of the GPU for large datasets. My similarity search was tested on a dataset of bee images (7,490 images, each with 45,000 pixels). Each pixel of the image has 3 values representing a RGB value. This brings the total dimensions of each image to 135,000! My algorithm utilizes a distance matrix in order to compare the difference of each RGB value, of each pixel, of each photo. <br><br>For each image, the program determines the number of images that have distances within a provided epsilon value. In simpler terms, the program finds how many photos are similar to a given photo. Download the code <a href="simSearch.zip">here</a> and run on a device that contains a graphic card.</p>	
+	    <img src="similaritySearch.png">
+	</div>	
+	
+	<div class="proj-title">
+	    <h1>Artificial Intelligence </h1>
+	</div>
+	<div class="proj-description">
+	    <p>in progress</p>
+	</div>
+	
+</body>
+</html>

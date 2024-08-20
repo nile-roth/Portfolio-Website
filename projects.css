@@ -1,0 +1,89 @@
+
+html, body {
+    background: linear-gradient( to bottom, darkcyan, black );
+	margin: 0;
+}
+.home-icon {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	font-size: 35px;
+	text-decoration: none;
+}
+.home-icon a{
+	color: white;
+}
+.home-icon a:hover{
+	color: bisque;
+}
+
+.proj-title {
+	width: 100%;
+	color: white;
+	font-family: 'OCR A Std', sans-serif;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	border-bottom-style: double;
+	border-bottom-color: white;
+	border-width: 10px;
+}
+
+.proj-title h1{
+	margin-top: 30px;
+	margin-bottom: 0;
+	font-size: 2em;
+}
+.proj-title h3{
+	margin: 0;
+	font-size: 1em;
+}
+
+.proj-description {
+	font-family: Tahoma, "Trebuchet MS", sans-serif;
+	color: black;
+	width: 100%;
+	margin-top: 30px;
+	display: flex;
+	flex-direction: row;
+    justify-content: center; 
+    gap: 20px;
+    overflow-x: auto; 
+}
+
+.proj-description video, .proj-description img {
+	padding: 5px 15px;
+	background: bisque;
+	border-radius: 25px;
+	border-color: black;
+	border-width: 5px;
+	max-width: 40%;
+	max-height: 400px;
+	flex: 1;
+}
+.double-image{
+	display: flex;
+	justify-content: space-around;
+}
+.double-image img{
+	max-width: 20%;
+}
+.proj-description p{
+	text-align: justify;
+	padding: 5px 15px;
+	background: bisque;
+	border-radius: 25px;
+	border-color: black;
+	border-width: 5px;
+	max-width: 50%;
+	min-width: 300px;
+}
+.proj-description h3{
+	font-family: Tahoma, "Trebuchet MS", sans-serif;
+	position: absolute;
+}
+
+.proj-description a{
+	color: black;
+}
+

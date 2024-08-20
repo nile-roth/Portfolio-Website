@@ -1,0 +1,164 @@
+/*                      FOR ANIMATED BACKGROUND                 */
+html, body { 
+    height: 100%; 
+    background: radial-gradient(circle, bisque, black 25%, darkcyan);
+	margin: 0;
+	justify-content: center;
+    align-items: center;
+	overflow: hidden;
+}
+
+body:after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; left: 0; bottom: 0;
+    background: radial-gradient(circle, transparent, black 25%, transparent);
+    animation: color 2s infinite ease-out alternate;
+	z-index: 0;
+    opacity: 1;
+}
+
+@keyframes color {
+    0% {  background: radial-gradient(circle, transparent, black 25%, transparent); }
+    100% { opacity: 0; }
+}
+/*                      END ANIMATED BACKGROUND                   */
+
+/*                        FOR NAVIGATION BAR                      */
+a{
+	text-decoration: none;
+	color: white;
+	font-family: 'OCR A Std', sans-serif;
+}
+a:hover{
+	color: bisque;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+	padding: 0;
+	margin-left: -35px;
+}
+li, button{
+	list-style: none;
+	z-index: 2;
+    font-size: 20px;
+}
+header{
+	border-bottom-style: solid;
+	border-bottom-color: white;
+}
+
+/*                        END NAVIGATION BAR                      */
+
+/*                          MAIN CONTENT                          */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+	position: relative;
+	z-index: 1;
+	margin-top: -70px;
+}
+
+.title-banner{
+    border: solid white;
+	border-style: double;
+	border-width: 10px;
+    width: 50%;
+    height: 40%;
+    background: none; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 25px;  
+}
+
+.title-banner-text{
+	text-align: center;
+	width: 100%;
+}
+
+.title-banner-text h3{
+	color: white;
+	font-family: 'OCR A Std', sans-serif;
+	margin: 0;
+}
+/*                         END MAIN CONTENT                       */
+
+/*                      FOR FLASHING OCCUPATIONS                  */
+
+.occupation{
+	font-family: 'OCR A Std', sans-serif;
+	font-weight: bold;
+	opacity: 0;
+	text-transform: uppercase;
+	font-size: 25px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.o1{ animation: ani1 20s infinite; }
+.o2{ animation: ani2 20s infinite; }
+.o3{ animation: ani3 20s infinite; }
+.o4{ animation: ani4 20s infinite; }
+.o5{ animation: ani5 20s infinite; }
+
+@keyframes ani1{
+	0%{ opacity: 0; }
+	10%{ opacity: 1; }
+	20%{ opacity: 0; }
+}
+@keyframes ani2{
+	20%{ opacity: 0; }
+	30%{ opacity: 1; }
+	40%{ opacity: 0; }
+}
+@keyframes ani3{
+	40%{ opacity: 0; }
+	50%{ opacity: 1; }
+	60%{ opacity: 0; }
+}
+@keyframes ani4{
+	60%{ opacity: 0; }
+	70%{ opacity: 1; }
+	80%{ opacity: 0; }
+}
+@keyframes ani5{
+	80%{ opacity: 0; }
+	90%{ opacity: 1; }
+	100%{ opacity: 0; }
+}
+
+/*                      END FLASHING OCCUPATIONS                   */
+
+
+.name{
+	position: absolute;
+	color: bisque;
+	bottom: 10px;
+    font-family: 'OCR A Std', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	text-transform: uppercase;
+	z-index: 3;
+	animation: shadowAni 4s infinite;
+}
+
+@keyframes shadowAni {
+    0% {
+        text-shadow: 0px 10px 2px black;
+    }
+    50% {
+        text-shadow: 0px 30px 2px black;
+    }
+    100% {
+        text-shadow: 0px 10px 2px black;
+    }
+}
